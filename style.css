@@ -3,13 +3,13 @@
 }
 
 #nav > a {
-  font-size: 1.5rem;
   font-family: "Bebas Neue", cursive;
   color: black;
-
-  padding: 10px 10px 10px 10px;
-
   font-size: 18px;
+  display: block;
+  float: left;
+  margin-left: 20px;
+  margin-top: 30px;
 }
 
 h1, nav {
@@ -20,3 +20,23 @@ h1, nav {
   background-image: url(alvaro-polo-7qTVHTZdTnc-unsplash.jpg);
   width: 50%;
 }*/
+
+#title {
+  display: flex;
+  font-family: "Bebas Neue", cursive;
+  color: black;
+  padding: 10px 10px 10px 10px;
+  font-size: 130px;
+  justify-content: center;
+  position: relative;
+  padding-top: 90px;
+}
+
+#background {
+  width: 100%; height: 100%; top: 0; left: 0;
+  background: url(alvaro-polo-7qTVHTZdTnc-unsplash.jpg) no-repeat center top; position: fixed; z-index: -1;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  }
