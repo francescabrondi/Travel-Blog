@@ -1,1 +1,22 @@
-del
+#nav {
+  background-color: transparent;
+}
+
+#nav > a {
+  font-size: 1.5rem;
+  font-family: "Bebas Neue", cursive;
+  color: black;
+
+  padding: 10px 10px 10px 10px;
+
+  font-size: 18px;
+}
+
+h1, nav {
+  url(https://unsplash.com/photos/7qTVHTZdTnc);
+}
+
+/*body {
+  background-image: url(alvaro-polo-7qTVHTZdTnc-unsplash.jpg);
+  width: 50%;
+}*/
