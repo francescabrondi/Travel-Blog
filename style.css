@@ -58,3 +58,8 @@ h1, nav {
   position: relative;
   padding-top: 30px;
   }
+
+  #photos {
+    align-content: space-around;
+    display: inline;
+  }
