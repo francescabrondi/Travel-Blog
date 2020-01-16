@@ -59,7 +59,21 @@ h1, nav {
   padding-top: 30px;
   }
 
-  #photos {
-    align-content: space-around;
-    display: inline;
+  
+
+#manneken-pis, #atomium, #grote-markt {
+  width: 400px;
+  height: 350px;
+  display: inline;
+  margin-left: 53px;
+}
+
+#atomium {
+  width: 250px;
+  height: 300px; 
+    object-fit: cover;
+    object-position: 40% 60%;
+    width: 400px;
+    height: 350px;
   }
+
