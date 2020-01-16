@@ -1,11 +1,7 @@
 body {
 background-color: #262425;
-
-  /* background-image: url(balvaro-polo-7qTVHTZdTnc-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: 00px 00px;
-background-attachment: scroll */
 }
+
 #nav {
   background-color: transparent;
 }
@@ -24,10 +20,6 @@ h1, nav {
   url(https://unsplash.com/photos/7qTVHTZdTnc);
 }
 
-/*body {
-  background-image: url(alvaro-polo-7qTVHTZdTnc-unsplash.jpg);
-  width: 50%;
-}*/
 
 #title {
   display: flex;
