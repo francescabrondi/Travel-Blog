@@ -53,7 +53,7 @@ h1, nav {
 
   
 
-#manneken-pis, #atomium, #grote-markt {
+/*#manneken-pis, #atomium, #grote-markt {
   width: 400px;
   height: 350px;
   display: inline;
@@ -69,5 +69,46 @@ h1, nav {
     height: 350px;
   }
 
-  
+  #photos{
+    position: relative;
+}
+  #manneken.pis1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
 
+  #manneken-pis1, #atomium1, #grote-markt1 {
+    width: 400px;
+    height: 350px;
+}
+*/
+
+.img {
+  width:100%;
+  padding-top:100%;
+  }
+
+#manneken-pis {
+  background-image:url("https://images.placesonline.com/photos/424012007170524_Bruxelles_498320908.jpg?quality=80&w=710&h=510&mode=crop");
+  background-position: center center;
+  background-size: cover;
+}
+
+#atomium {
+  background-image:url("https://images.unsplash.com/photo-1561404751-d86642d396f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80");
+  background-position: center center;
+  background-size: cover;
+}
+
+#grote-markt {
+  background-image:url("https://images.unsplash.com/photo-1571383962150-87f1c46d8125?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1500&q=80");
+  background-position: center center;
+  background-size: cover;
+}
+
+
+
+#img1:hover {
+
+}
