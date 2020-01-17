@@ -20,7 +20,7 @@ h1,
 nav {
   background-image: url("https://unsplash.com/photos/7qTVHTZdTnc");
 }
-/*madonna*/
+/*Scritta Bruxelles*/
 #title {
   display: flex;
   font-family: "Bebas Neue", cursive;
@@ -33,15 +33,7 @@ nav {
   padding-left: 500px;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
+/*immagine di sfondo iniziale*/
 #background {
   width: 100%;
   height: 95vh;
@@ -52,7 +44,7 @@ nav {
   background-size: 100%;
   background-attachment: scroll;
 }
-
+/*Scritta News feed*/
 #news {
   font-family: "Bebas Neue", cursive;
   color: #c1c1c1;
@@ -61,125 +53,63 @@ nav {
   position: relative;
   padding-top: 30px;
 }
-
+/*class immagini riferita alle 3 immagini nel news feed*/
 .img {
   width: 100%;
   height: 100%;
-  padding: 1rem;
-  position: relative;
 }
 
+.news-item {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  transition: 1s background-color;
+}
+
+.news-title {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s opacity;
+}
+
+/*immagine della statua mannekin-pis*/
 #manneken-pis {
   background-image: url("https://images.placesonline.com/photos/424012007170524_Bruxelles_498320908.jpg?quality=80&w=710&h=510&mode=crop");
   background-position: center center;
   background-size: cover;
 }
-
+/*immagine dell'atomium*/
 #atomium {
   background-image: url("https://images.unsplash.com/photo-1561404751-d86642d396f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80");
   background-position: center center;
   background-size: cover;
 }
-
+/*immagine della piazza grote-markt*/
 #grote-markt {
   background-image: url("https://images.unsplash.com/photo-1571383962150-87f1c46d8125?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1500&q=80");
   background-position: center center;
   background-size: cover;
 }
 
-#manneken-pis:hover {
-  background-image: url("https://staticr1.blastingcdn.com/media/photogallery/2016/12/7/660x290/b_1200x675/il-manneken-pis-simbolo-della-citta-di-bruxelles_1026287.jpg");
-  background-position: center center;
-  background-size: cover;
-}
-
-#atomium:hover {
-  background-image: url("https://live.staticflickr.com/4832/30811685367_ed12143e22_b.jpg");
-  background-position: center center;
-  background-size: cover;
-  opacity: 30%;
-}
-
-#grote-markt:hover {
-  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/04/4e/92/32/great-market-square-grote.jpg");
-  background-position: center center;
-  background-size: cover;
-  opacity: 30%;
-}
-
-#statue {
-  font-family: "Bebas Neue", cursive;
-  color: white;
-  font-size: 30px;
-  position: relative;
-  text-align: center;
-  visibility: hidden;
-  z-index: 2;
-}
-
-.text {
+/*testi sulle immagini*/
+.news-text {
   font-family: "Lato", sans-serif;
   color: white;
   text-align: justify;
   padding: 0 10px;
   font-size: 15px;
-  visibility: hidden;
-  z-index: 2;
+  opacity: 0;
+  transition: 1s opacity;
 }
 
-#text1 {
+.news-item:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-#text2 {
-}
-
-#building {
-  font-family: "Bebas Neue", cursive;
-  color: white;
-  font-size: 30px;
-  position: relative;
-  text-align: center;
-  display: none;
-}
-
-#text3 {
-}
-
-#market {
-  font-family: "Bebas Neue", cursive;
-  color: white;
-  font-size: 30px;
-  position: relative;
-  text-align: center;
-  display: none;
-}
-
-#manneken-pis:hover #text1 {
-  visibility: initial;
-  opacity: 100%;
-}
-
-#manneken-pis:hover #statue {
-  display: block;
-  opacity: 100%;
-}
-
-#atomium:hover #text2 {
-  display: block;
-  opacity: 100%;
-}
-
-#atomium:hover #building {
-  display: block;
-  opacity: 100%;
-}
-
-#grote-markt:hover #text3 {
-  display: block;
-  opacity: 100%;
-}
-
-#grote-markt:hover #market {
-  display: block;
+.news-item:hover .news-text,
+.news-item:hover .news-title {
   opacity: 100%;
 }
