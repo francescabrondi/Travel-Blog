@@ -29,8 +29,9 @@ nav {
   font-size: 130px;
   text-align: center;
   position: absolute;
-  padding-top: 120px;
-  padding-left: 500px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*immagine di sfondo iniziale*/
@@ -112,4 +113,24 @@ nav {
 .news-item:hover .news-text,
 .news-item:hover .news-title {
   opacity: 100%;
+}
+
+footer {
+  background-color: #c1c1c1;
+  height: 70px;
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+}
+#footer-text {
+  font-family: "Bebas Neue", cursive;
+  color: #262425;
+  font-size: 20px;
+}
+
+#footer-credits {
+  font-family: "Bebas Neue", cursive;
+  color: #262425;
+  font-size: 20px;
+  text-align: right;
 }
