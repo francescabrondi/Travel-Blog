@@ -20,7 +20,7 @@ h1,
 nav {
   background-image: url("https://unsplash.com/photos/7qTVHTZdTnc");
 }
-
+/*madonna*/
 #title {
   display: flex;
   font-family: "Bebas Neue", cursive;
@@ -31,6 +31,15 @@ nav {
   position: absolute;
   padding-top: 120px;
   padding-left: 500px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #background {
@@ -55,7 +64,9 @@ nav {
 
 .img {
   width: 100%;
-  padding-top: 100%;
+  height: 100%;
+  padding: 1rem;
+  position: relative;
 }
 
 #manneken-pis {
@@ -80,7 +91,6 @@ nav {
   background-image: url("https://staticr1.blastingcdn.com/media/photogallery/2016/12/7/660x290/b_1200x675/il-manneken-pis-simbolo-della-citta-di-bruxelles_1026287.jpg");
   background-position: center center;
   background-size: cover;
-  opacity: 30%;
 }
 
 #atomium:hover {
@@ -101,9 +111,75 @@ nav {
   font-family: "Bebas Neue", cursive;
   color: white;
   font-size: 30px;
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.text {
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-align: justify;
+  padding: 0 10px;
+  font-size: 15px;
+  visibility: hidden;
+  z-index: 2;
 }
 
 #text1 {
-  font-family: "Lato", sans-serif;
+}
+
+#text2 {
+}
+
+#building {
+  font-family: "Bebas Neue", cursive;
   color: white;
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+  display: none;
+}
+
+#text3 {
+}
+
+#market {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+  display: none;
+}
+
+#manneken-pis:hover #text1 {
+  visibility: initial;
+  opacity: 100%;
+}
+
+#manneken-pis:hover #statue {
+  display: block;
+  opacity: 100%;
+}
+
+#atomium:hover #text2 {
+  display: block;
+  opacity: 100%;
+}
+
+#atomium:hover #building {
+  display: block;
+  opacity: 100%;
+}
+
+#grote-markt:hover #text3 {
+  display: block;
+  opacity: 100%;
+}
+
+#grote-markt:hover #market {
+  display: block;
+  opacity: 100%;
 }
