@@ -109,6 +109,23 @@ h1, nav {
 
 
 
-#img1:hover {
+#manneken-pis:hover {
+  background-image:url("https://staticr1.blastingcdn.com/media/photogallery/2016/12/7/660x290/b_1200x675/il-manneken-pis-simbolo-della-citta-di-bruxelles_1026287.jpg");
+  background-position: center center;
+  background-size: cover;
+  opacity:30%;
+}
 
+#atomium:hover {
+  background-image:url("https://live.staticflickr.com/4832/30811685367_ed12143e22_b.jpg");
+  background-position: center center;
+  background-size: cover;
+  opacity:30%
+}
+
+#grote-markt:hover {
+  background-image:url("https://media-cdn.tripadvisor.com/media/photo-s/04/4e/92/32/great-market-square-grote.jpg");
+  background-position: center center;
+  background-size: cover;
+  opacity:30%
 }
