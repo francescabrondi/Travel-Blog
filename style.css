@@ -124,7 +124,6 @@ footer {
 }
 #footer-text {
   font-family: "Bebas Neue", cursive;
-  color: #262425;
   font-size: 20px;
 }
 
@@ -133,4 +132,8 @@ footer {
   color: #262425;
   font-size: 20px;
   text-align: right;
+}
+
+a {
+  color: #262425;
 }
