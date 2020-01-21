@@ -134,6 +134,16 @@ footer {
   text-align: right;
 }
 
-a {
+a:hover {
+  color: #262425;
+  text-decoration: underline;
+}
+a:active {
+  color: #262425;
+}
+a:visited {
+  color: #262425;
+}
+a:link {
   color: #262425;
 }
