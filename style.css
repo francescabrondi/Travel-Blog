@@ -7,11 +7,14 @@ body {
   background-color: #262425;
 }
 
-#nav {
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: transparent;
 }
 
-#nav > a {
+.nav > a {
   font-family: "Bebas Neue", cursive;
   color: black;
   font-size: 18px;
@@ -22,7 +25,7 @@ body {
 }
 
 h1,
-nav {
+.nav {
   background-image: url("https://unsplash.com/photos/7qTVHTZdTnc");
 }
 /*Scritta Bruxelles*/
@@ -196,4 +199,22 @@ small {
 #break {
   margin: 40px 0;
   padding: 0 30px;
+}
+
+.image-grid img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#photo-g {
+  font-family: "Bebas Neue", cursive;
+  color: #c1c1c1;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+}
+
+.nav-light > a {
+  color: white;
 }
