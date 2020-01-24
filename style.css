@@ -204,6 +204,11 @@ small {
 .image-grid img {
   width: 100%;
   margin-bottom: 30px;
+  transition: 0.3s transform;
+}
+
+.image-grid img:hover {
+  transform: scale(1.1);
 }
 
 #photo-g {
