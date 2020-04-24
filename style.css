@@ -223,3 +223,234 @@ small {
 .nav-light > a {
   color: white;
 }
+
+@media screen and (max-width: 992px) {
+  * {
+    overflow-x: hidden;
+  }
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+
+  .nav > a {
+    font-family: "Bebas Neue", cursive;
+    color: black;
+    font-size: 14px;
+    display: block;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  h1,
+  .nav {
+    background-image: url("https://unsplash.com/photos/7qTVHTZdTnc");
+  }
+  /*Scritta Bruxelles*/
+  #title {
+    display: flex;
+    font-family: "Bebas Neue", cursive;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*immagine di sfondo iniziale*/
+  #background {
+    width: 100%;
+    /* height: 95vh; */
+    background: url("alvaro-polo-7qTVHTZdTnc-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: -1;
+    background-size: 100%;
+    /* background-attachment: scroll; */
+  }
+  /*Scritta News feed*/
+  #news {
+    font-family: "Bebas Neue", cursive;
+    color: #c1c1c1;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    padding-top: 10px;
+  }
+  /*class immagini riferita alle 3 immagini nel news feed*/
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .news-item {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    transition: 1s background-color;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .news-title {
+    font-family: "Bebas Neue", cursive;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s opacity;
+  }
+
+  /*immagine della statua mannekin-pis*/
+  #manneken-pis {
+    background-image: url("https://images.placesonline.com/photos/424012007170524_Bruxelles_498320908.jpg?quality=80&w=710&h=510&mode=crop");
+    background-position: center center;
+    background-size: cover;
+  }
+  /*immagine dell'atomium*/
+  #atomium {
+    background-image: url("https://images.unsplash.com/photo-1561404751-d86642d396f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80");
+    background-position: center center;
+    background-size: cover;
+  }
+  /*immagine della piazza grote-markt*/
+  #grote-markt {
+    background-image: url("https://images.unsplash.com/photo-1571383962150-87f1c46d8125?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1500&q=80");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  /*testi sulle immagini*/
+  .news-text {
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-align: justify;
+    padding: 0 10px;
+    font-size: 15px;
+    opacity: 0;
+    transition: 1s opacity;
+  }
+
+  .news-item:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .news-item:hover .news-text,
+  .news-item:hover .news-title {
+    opacity: 100%;
+  }
+
+  footer {
+    background-color: #c1c1c1;
+    height: 70px;
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px;
+  }
+  #footer-text {
+    font-family: "Bebas Neue", cursive;
+    font-size: 20px;
+  }
+
+  #footer-credits {
+    font-family: "Bebas Neue", cursive;
+    color: #262425;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  a:hover {
+    color: #262425;
+    text-decoration: underline;
+  }
+  a:active {
+    color: #262425;
+  }
+  a:visited {
+    color: #262425;
+  }
+  a:link {
+    color: #262425;
+  }
+
+  #about-text,
+  #contact-text {
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-align: justify;
+  }
+
+  #about,
+  #contact {
+    font-family: "Bebas Neue", cursive;
+    color: #c1c1c1;
+    font-size: 50px;
+    margin-top: 40px;
+  }
+
+  .btn-primary {
+    color: black;
+    background-color: #fff;
+    border-color: #fff;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  small {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+  }
+
+  .text-muted {
+    color: white;
+  }
+
+  #line {
+    border-right: 3px solid white;
+    margin: 50px 0;
+    padding: 0 30px;
+    height: 550px;
+  }
+
+  #break {
+    margin: 40px 0;
+    padding: 0 30px;
+  }
+
+  .image-grid img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.3s transform;
+  }
+
+  .image-grid img:hover {
+    transform: scale(1.1);
+  }
+
+  #photo-g {
+    font-family: "Bebas Neue", cursive;
+    color: #c1c1c1;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+  }
+
+  .nav-light > a {
+    color: white;
+  }
+}
